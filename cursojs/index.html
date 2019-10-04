@@ -11,18 +11,23 @@
 <body>
 
     <script>
-        var resultado
+        function retornaSexo(sexo) {
 
-        function soma(n1, n2) {
-            resultado = n1 + n2;
+            if (sexo === 'm') {
+                return console.log("masculino");
+            }
+            else if (sexo === 'f') {
+                return console.log("feminino")
 
-            return resultado;
+            }
+            else {
+                return 'outro';
+            }
         }
 
-        soma(8, 8);
+        var resultado = retornaSexo('outro');
 
         console.log(resultado);
-
     </script>
 </body>
 
