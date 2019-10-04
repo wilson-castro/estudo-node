@@ -11,25 +11,11 @@
 <body>
 
     <script>
-        function retornaSexo(sexo) {
 
-            switch (sexo) {
-                case 'm':
-                    return 'masculino'
-                    break;
-                case 'f':
-                    return 'feminino'
-                    break;
+        var sexo = 'm';
 
-                default:
-                    return 'outro'
-                    break;
-            }
-        }
+        console.log((sexo === 'm') ? 'masculino' : 'feminino');
 
-        var resultado = retornaSexo('outro');
-
-        console.log(resultado);
     </script>
 </body>
 
