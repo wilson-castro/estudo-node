@@ -13,15 +13,17 @@
     <script>
         function retornaSexo(sexo) {
 
-            if (sexo === 'm') {
-                return console.log("masculino");
-            }
-            else if (sexo === 'f') {
-                return console.log("feminino")
+            switch (sexo) {
+                case 'm':
+                    return 'masculino'
+                    break;
+                case 'f':
+                    return 'feminino'
+                    break;
 
-            }
-            else {
-                return 'outro';
+                default:
+                    return 'outro'
+                    break;
             }
         }
 
