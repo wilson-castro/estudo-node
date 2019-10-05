@@ -10,24 +10,14 @@
 
 <body>
     <div id="app">
-        <input id="nome" />
+        <ul>
+        </ul>
 
+        <input type="text" placeholder="Digite um todo">
+        <button>Adicionar</button>
     </div>
 
-    <script>
-        var linkElement = document.createElement("a");
-        linkElement.setAttribute("href", "http://google.com");
-
-        var textElement = document.createTextNode("Google site");
-        linkElement.appendChild(textElement);
-
-        var containerElement = document.querySelector("#app");
-        containerElement.appendChild(linkElement);
-
-        containerElement.removeChild(document.querySelector("input#nome"));
-
-
-    </script>
+    <script src="todos.js"></script>
 </body>
 
 </html>
