@@ -9,15 +9,20 @@
 </head>
 
 <body>
-    <button onclick="mostrarAlerta()" >Pressione</button>
+    <button class="botao">Pressione</button>
+    <input type="text" name="nome" />
 
     <script>
 
 
-        function mostrarAlerta() {
-            alert('botão clicado')
-        }
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
 
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+
+            alert(text);
+        }
     </script>
 </body>
 
